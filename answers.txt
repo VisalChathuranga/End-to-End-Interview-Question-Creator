@@ -1,0 +1,147 @@
+Question: Okay, here are the refined questions, incorporating the provided text snippets. The refinements aim to be more specific and directly test comprehension of the new material.
+Answer: Okay, I'm ready. Please ask your questions.
+--------------------------------------------------
+
+Question: 1.  **Data Extraction & Transformation (Slightly Modified):** The original text (not provided, but assumed) likely mentioned a global commitment regarding poverty. Based *solely* on the provided text snippets, can you identify a specific, quantifiable target related to reducing waste (food or other)? If so, state the target and the type of waste it addresses. If not, answer "No quantifiable waste reduction target mentioned in provided snippets."
+Answer: Cut per capita food waste in half 
+globally.
+--------------------------------------------------
+
+Question: 2.  **Conditional Logic & Filtering (Modified):** The provided text mentions several environmental challenges. Write a function that takes an environmental challenge (e.g., "ocean acidification", "deforestation") as input and returns "SDG Explicitly Addressed" if the challenge is *explicitly* mentioned in the provided text snippets as being addressed by the SDGs, and "Not Explicitly Mentioned" otherwise.
+Answer: ```python
+def check_sdg_address(challenge):
+    """
+    Checks if a given environmental challenge is explicitly mentioned as being addressed by the SDGs in the provided text.
+
+    Args:
+        challenge (str): The environmental challenge to check (e.g., "ocean acidification", "deforestation").
+
+    Returns:
+        str: "SDG Explicitly Addressed" if the challenge is explicitly mentioned, "Not Explicitly Mentioned" otherwise.
+    """
+
+    text = """change, some more than others. On average, the annual losses just 
+from earthquakes, tsunamis, tropical cyclones and flooding count in the 
+hundreds of billions of dollars. We can reduce the loss of life and property 
+by helping more vulnerable regions—such as land-locked countries 
+and island states—become more resilient. It is still possible, with the 
+political will and technological measures, to limit the increase in global 
+mean temperature to two degrees Celsius above pre-industrial levels—
+and thus avoid the worst effects of climate change. The Sustainable 
+Development Goals lay out a way for countries to work together to meet 
+this urgent challenge.CONSERVE AND SUSTAINABLY USE THE 
+OCEANS, SEAS AND MARINE RESOURCES 
+FOR SUSTAINABLE DEVELOPMENT
+The oceans make human life possible. Their temperature, their chemistry, 
+their currents, their life forms. For one thing, more than 3 billion people 
+depend on marine and coastal diversity for their livelihoods. But today
+
+depend on marine and coastal diversity for their livelihoods. But today 
+we are seeing nearly a third of the world’s fish stocks overexploited. 
+That’s not a sustainable way of life. Even people who live nowhere near 
+the ocean can’t live without it. Oceans absorb about 30 percent of the 
+carbon dioxide that humans produce; but we’re producing more carbon 
+dioxide than ever before and that makes the oceans more acidic—26% 
+more, since the start of the industrial revolution. Our trash doesn’t help 
+either—13,000 pieces of plastic litter on every square kilometer of ocean. 
+Sounds bad, right? Don’t despair! The Sustainable Development Goals 
+indicate targets for managing and protecting life below water.PROTECT, RESTORE AND PROMOTE 
+SUSTAINABLE USE OF TERRESTRIAL 
+ECOSYSTEMS, SUSTAINABLY MANAGE 
+FORESTS, COMBAT DESERTIFICATION, AND 
+HAL T AND REVERSE LAND DEGRADATION 
+AND HAL T BIODIVERSITY LOSS 
+Humans and other animals rely on other forms of life on land for food,
+
+But there’s ample evidence that we can succeed. In the past 15 years, the 
+international community cut extreme poverty in half. 
+Now we can finish the job.
+The United Nations Development Programme (UNDP) is one of the leading 
+organizations working to fulfil the SDGs by the year 2030. Present in nearly 
+170 countries and territories, we help nations make the Goals a reality. 
+We also champion the Goals so that people everywhere know how to 
+do their part. 
+UNDP is proud to continue as a leader in this global movement.
+Learn about the Sustainable Development Goals.  What’s your Goal?END EXTREME POVERTY IN ALL FORMS  
+BY 2030.
+Yes, it’s an ambitious goal—but we believe it can be done. In 2000, the 
+world committed to halving the number of people living in extreme 
+poverty by the year 2015 and we met this goal. However, more than 
+800 million people around the world still live on less than $1.25 a day—
+that’s about the equivalent of the entire population of Europe living in
+
+Visit shop.undp.org for SDG merchandise, and show off the goals you’re 
+most passionate about. 
+Money doesn’t just make the world go around; it’s also the most direct 
+way to reduce and eradicate all forms of poverty.
+Fundraising is a great way to raise money, create awareness, and inspire 
+others. Plus, it’s fun!
+Search for @UNDP on Twitter, Facebook and Instagram, and share the 
+content you love.
+To donate or learn more about fundraising, visit undp.org/takeaction
+There are many ways to show your support and help us reach 
+the Sustainable Development Goals by 2030. Here are a few :
+WHA T CAN  
+I DO TO HELP?NOTESNOTES"""
+
+    text = text.lower()
+    challenge = challenge.lower()
+
+    if challenge in text:
+        return "SDG Explicitly Addressed"
+    else:
+        return "Not Explicitly Mentioned"
+```
+--------------------------------------------------
+
+Question: 3.  **Quantitative Reasoning (Unchanged, but with emphasis):** The original question relied on external knowledge.  The text states that "oceans absorb about 30 percent of the carbon dioxide that humans produce". If humans produce X amount of carbon dioxide, what amount of carbon dioxide is absorbed by the oceans?
+Answer: If humans produce X amount of carbon dioxide, then 0.30X amount of carbon dioxide is absorbed by the oceans.
+--------------------------------------------------
+
+Question: 4.  **Comparative Analysis (Removed - Not enough information in the snippets):**  Removed because the snippets don't provide comparative data.  This question would require the original, unprovided text.
+Answer: I am sorry, but I cannot answer that question with the context provided.
+--------------------------------------------------
+
+Question: 5.  **Pattern Recognition & Abstraction (Modified):** The original question asked about electricity.  Based on the provided text snippets, identify *two* distinct environmental problems discussed and, for *each*, briefly describe a consequence or impact mentioned in the text.
+Answer: Here are two distinct environmental problems discussed in the text, along with a consequence/impact for each:
+
+1.  **Climate Change:** A consequence of climate change, as mentioned in the text, is that it is "leading to big problems on every continent." The text also mentions drastic effects of climate change are being seen in every country.
+2.  **Ocean Overexploitation/Pollution:** One impact of this problem is that "nearly a third of the world’s fish stocks" are being overexploited. Additionally, the text notes that increased carbon dioxide levels are making the oceans more acidic, and there is a significant amount of plastic litter in the ocean.
+--------------------------------------------------
+
+Question: 6.  **Text Summarization (Slightly Modified):** Summarize the main point of the section on "CONSERVE AND SUSTAINABLY USE THE OCEANS, SEAS AND MARINE RESOURCES FOR SUSTAINABLE DEVELOPMENT" in one concise sentence.
+Answer: Oceans are essential for human life, but are threatened by overexploitation, pollution, and acidification, necessitating sustainable management and protection.
+--------------------------------------------------
+
+Question: 7.  **Goal Identification (Modified):** The original question asked about education goals. Based on the provided text, list *two* specific targets or actions related to *terrestrial ecosystems* mentioned in the text.
+Answer: Based on the text, here are two specific targets or actions related to terrestrial ecosystems:
+
+1.  Conserve and restore the use of terrestrial ecosystems such as forests, wetlands, drylands, and mountains by 2030.
+2.  Sustainably manage forests, combat desertification, halt and reverse land degradation, and halt biodiversity loss.
+--------------------------------------------------
+
+Question: 8.  **Inference & Reasoning (Removed - Not enough information in the snippets):** Removed because the snippets don't provide enough information for this type of inference.
+Answer: I'm sorry, but the provided text snippets do not contain the answer to this question.
+--------------------------------------------------
+
+Question: 9.  **Problem Solving (Modified):** The original question asked about urbanization. Based on the provided text, describe one specific problem associated with *ocean health* mentioned in the text, and one proposed solution (or SDG target) to address that problem.
+Answer: Problem: Overexploitation of fish stocks, with nearly a third of the world’s fish stocks being overexploited. Also, the increasing acidification of oceans due to excessive carbon dioxide production and plastic litter (13,000 pieces of plastic litter on every square kilometer of ocean).
+
+Solution: The Sustainable Development Goals indicate targets for managing and protecting life below water.
+--------------------------------------------------
+
+Question: 10. **Prioritization (Modified):** If you were tasked with developing a program to address one of the SDGs mentioned in the provided text snippets, which SDG related to *environmental sustainability* (Oceans, Climate Change, Terrestrial Ecosystems) would you choose and why? Justify your choice based *solely* on information presented in the provided text snippets, considering both the severity of the problem and the potential for impact.
+Answer: Based solely on the provided text snippets, I would prioritize the SDG related to **Conserving and sustainably using the oceans, seas, and marine resources for sustainable development.**
+
+Here's my justification:
+
+*   **Severity of the Problem:** The text highlights several critical issues facing our oceans:
+    *   Overexploitation of fish stocks: "Nearly a third of the world’s fish stocks overexploited."
+    *   Ocean acidification: "Oceans absorb about 30 percent of the carbon dioxide that humans produce; but we’re producing more carbon dioxide than ever before and that makes the oceans more acidic—26% more, since the start of the industrial revolution."
+    *   Plastic pollution: "13,000 pieces of plastic litter on every square kilometer of ocean."
+*   **Potential for Impact:** The text explicitly states that the Sustainable Development Goals "indicate targets for managing and protecting life below water," suggesting a clear framework for action and a belief in the possibility of positive change.
+*   **Interconnectedness:** The text emphasizes the ocean's fundamental role in supporting human life: "The oceans make human life possible. Their temperature, their chemistry, their currents, their life forms." and "more than 3 billion people depend on marine and coastal diversity for their livelihoods". This highlights the broad impact that addressing ocean-related issues could have.
+
+While climate change and terrestrial ecosystems are also important, the text provides a more detailed and alarming picture of the specific problems facing the oceans, along with a direct mention of targets for improvement within the SDGs. This makes it a compelling area for focused intervention based on the information provided.
+--------------------------------------------------
+
